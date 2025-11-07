@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #3f7fc0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      background: rgb(255, 255, 255);
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    /* Animated banner */
+    .banner {
+      width: 100%;
+      height: 230px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Hero section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 40px;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: height 0.3s ease;
+    }
+
+    .hero-text {
+      flex: 1;
+      color: #000000;
+      font-size: 18px;
+      line-height: 1.6;
+      font-weight: 500;
+    }
+
+    .hero-text h2 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: #000000;
+    }
+
+    /* Content blocks */
+    .content-block {
+      padding: 40px;
+      border-top: 1px solid #eee;
+    }
+
+    .content-block h2 {
+      font-size: 22px;
+      color: #000000;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .content-block p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      background: #000000;
+      color: #fff;
+      border: none;
+      padding: 10px 25px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #1d4a96;
+    }
+
+    /* Services section */
+    .services {
+      padding: 40px;
+      border-top: 1px solid #eee;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 22px;
+      color: #060606;
+      margin-bottom: 25px;
+    }
+
+    .service-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .service-item {
+      width: 280px;
+      text-align: center;
+    }
+
+    .service-item img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #d4e7ff;
+      margin-bottom: 15px;
+    }
+
+    .service-item p {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* Description section */
+    .description {
+      padding: 40px;
+      border-top: 1px solid #eee;
+    }
+
+    .description h2 {
+      font-size: 22px;
+      color: #000000;
+      margin-bottom: 15px;
+    }
+
+    .description p {
+      color: #4b4747;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #f5f5f5;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero img {
+        width: 100%;
+        max-width: none;
+        height: auto;
+      }
+      .service-images {
+        gap: 20px;
+      }
+      .service-item {
+        width: 100%;
+        max-width: 320px;
+      }
+      .service-item img {
+        height: 380px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Animated banner -->
+    <div class="banner" onclick="window.location.href='https://www.nike.com/ph/?msockid=016024e537096b361a70376e361d6a1c'">
+  <a href="https://www.nike.com/ph/?msockid=016024e537096b361a70376e361d6a1c" aria-label="Banner Ad">
+    <img src="images/banner,gif.gif" alt="Animated Banner">
+  </a>
+</div>
+
+
+    <!-- Hero section -->
+    <section class="hero">
+      <img src="images/run.jpg" alt="Hero Image or GIF" style="height: auto;">
+      <div class="hero-text">
+      <h2>Start Unknown. Finish Unforgettable.</h2>
+      <p>Every runner begins somewhere—often unnoticed, uncelebrated, and unsure. But with every stride, every challenge overcome, and every finish line crossed, they carve a story worth remembering. Nike running shoes are built for that journey: to support the quiet beginnings and fuel the unforgettable finishes. Because greatness isn't about where you start—it's how far you're willing to go.</p>
+      </div>
+    </section>
+
+    <!-- Success stories -->
+    <div class="content-block">
+      <h2>Short paragraph about success stories or positive experiences about your service / product</h2>
+      <p>Nike running shoes have empowered athletes and everyday runners alike to push their limits and achieve personal victories. From marathon champions to weekend joggers, users consistently praise the shoes for their comfort, durability, and performance-enhancing design. Stories like that of Paralympian Tatyana McFadden, who credits Nike's innovation for supporting her record-breaking races, or everyday runners who've conquered their first 5K with the help of Nike Air Zooms, highlight how the brand turns ambition into achievement. With every stride, Nike proves it's more than just footwear—it's a partner in progress.</p>
+      <button class="cta-button" onclick="window.location.href='personal.html'">Link to my Personal Page</button>
+    </div>
+
+    <!-- Introduction -->
+    <div class="content-block">
+      <h2>Short introduction of your services or product</h2>
+      <p>Discover the Power of Every Step We offer a premium selection of Nike running shoes designed to elevate your performance, comfort, and style. Whether you're a seasoned athlete or just starting your fitness journey, our collection delivers cutting-edge technology, responsive cushioning, and sleek design to help you run faster, train smarter, and feel unstoppable. With every pair, you're not just buying shoes—you're investing in your stride, your goals, and your greatness.</p>
+    </div>
+
+    <!-- Services section -->
+    <div class="services">
+      <h2>Images of services or product</h2>
+      <div class="service-images">
+        <div class="service-item">
+          <img src="images/pega.jpg" alt="Service 1">
+          <h2>Nike Pegasus 41 </h2>
+        </div>
+        <div class="service-item">
+          <img src="images/alphafly.jpg" alt="Service 2">
+          <h2>Nike Alpha Fly 3</h2>
+        </div>
+         <div class="service-item">
+          <img src="images/vaporfly.jpg" alt="Service 3">
+          <h2>Nike Vaporfly 3</h2>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="description">
+    <h2>Description of Services</h2>
+    <p>We offer a curated selection of Nike running shoes designed to elevate your performance, comfort, and style—whether you're training for a marathon or just starting your fitness journey.<br>Each pair is crafted with cutting-edge technology like ReactX foam, ZoomX cushioning, and breathable mesh uppers to deliver optimal energy return, lightweight support, and all-day comfort.<br><br>Our lineup includes versatile trainers like the <strong>Nike Pegasus 41</strong>, perfect for daily runs and gym sessions, and elite racers like the <strong>Nike Alphafly 3</strong>, built for speed and endurance on race day.<br>Customers benefit from expert sizing guidance, style recommendations, and exclusive access to the latest drops and colorways.<br>With every purchase, you're not just buying shoes—you're investing in performance, innovation, and the confidence to go further.
+    </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <h1>Web Technology</h1>
+      <p>Panpacific University</p>
+    </div>
+  </div>
+</body>
+</html>
